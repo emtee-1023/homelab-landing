@@ -1,120 +1,148 @@
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin: 0;
-    font-family: 'Inter' , sans-serif;
-    background-color: hsl(0, 0%, 8%);
-    color: hsl(0, 0%, 100%);
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
 }
 
-main.container{
-    background-color: hsl(0, 0%, 12%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 375px;
-    height: auto;
-    margin-top: 50px;
-    padding: 15px;
-    border-radius: 15px;   
+main.container {
+  background-color: hsl(0, 0%, 12%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 375px;
+  height: auto;
+  margin-top: 50px;
+  padding: 15px;
+  border-radius: 15px;
 }
 
-.pfp{
-    border-radius: 50%;
-    max-width: 75px;
-    margin: 2px 0px 5px 0;
+.pfp {
+  border-radius: 50%;
+  max-width: 75px;
+  margin: 2px 0px 5px 0;
 }
 
-.name h1{
-    margin: 5px 0px 10px 0px;
-    font-weight: 700;
-    font-size: x-large;
+.name h1 {
+  margin: 5px 0px 10px 0px;
+  font-weight: 700;
+  font-size: x-large;
 }
 
-.location p{
-    margin: 0px 0px 10px 0px;
-    color: hsl(0, 0%, 100%);
-    font-weight: 700;
-    font-size: smaller;
+.location p {
+  margin: 0px 0px 10px 0px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: smaller;
 }
 
-.proffesion p{
-    margin: 15px 0px;
-    font-size: small;
-
+.proffesion p {
+  margin: 15px 0px;
+  font-size: small;
 }
 
 .buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 300px;
-    margin: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+  margin: 10px 15px;
 }
 
-.socials{
-    width: 100%;
-    background-color: hsl(0, 0%, 20%);
-    color: hsl(0, 0%, 100%);
-    border: 0;
-    border-radius: 7px;
-    padding: 12px;
-    font-weight: 600;
+.socials {
+  width: 100%;
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 100%);
+  border: 0;
+  border-radius: 7px;
+  padding: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 1.1em;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
-.socials:hover{
-    cursor: pointer;
-    background-color: hsl(236,96%,9%);
-    color: hsl(0, 0%, 100%);
+.homelab-btn .icon {
+  margin-right: 10px;
+  font-size: 1.7em;
+  display: flex;
+  align-items: center;
 }
 
-.socials:focus{
-    background-color: hsl(236,96%,9%);
-    color: hsl(0, 0%, 100%);   
+.homelab-btn .btn-label {
+  flex: 1;
+  text-align: left;
+  font-size: 1em;
+  font-weight: 600;
 }
 
-.attribution{
-    margin-top: 40px;
-    font-size: 11px; 
-    text-align: center;
+.homelab-btn {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+  border: 1px solid hsl(0, 0%, 18%);
 }
 
-.attribution a { 
-    color: hsl(228, 45%, 44%);
+.homelab-btn:hover {
+  background: hsl(236, 96%, 18%);
+  color: #fff;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.18);
 }
 
-footer .container{
-    margin-top: 50px;
-    background-color: hsl(0, 0%, 12%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 350px;
-    height: auto;
-    padding: 15px;
-    border-radius: 15px;  
-    margin-bottom: 50px; 
+.socials:hover {
+  cursor: pointer;
+  background-color: hsl(236, 96%, 9%);
+  color: hsl(0, 0%, 100%);
+}
+
+.socials:focus {
+  background-color: hsl(236, 96%, 9%);
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution {
+  margin-top: 40px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+footer .container {
+  margin-top: 50px;
+  background-color: hsl(0, 0%, 12%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 350px;
+  height: auto;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 50px;
 }
 
 .container .title h1 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .container .description p {
-    font-size: 1rem;
-    text-align: center;
-    line-height: 25px;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 25px;
 }
 
 footer .container .links a {
-    color: aliceblue;
-    text-decoration: underline;
-    text-align: center;
-    margin-bottom: 10px;
+  color: aliceblue;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 10px;
 }
-

@@ -1,58 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/jpg" sizes="32x32" href="./assets/images/DevSolutions Logo-01.jpg">
-  <title>DevSolutions | Simple Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  
-  
-  <main class="container">
-    <div class="pfp">
-      <img src="assets/images/DevSolutions Logo-01.jpg" alt="Logo" class="pfp">
-    </div>
-    <div class="name">
-      <h1>DevSolutions</h1>
-    </div>
-    <div class="location">
-      <p>Nairobi, Kenya</p>
-    </div>
-    <div class="proffesion">
-      <p style="text-align: center;">Simple Portfolio</p>
-    </div>
-    <div class="buttons">
-      <button type="button" class="socials" onclick="openLink('https://emtee-1023.github.io/easybank-landing-page/')">Easybank Sample Landing Page</button>
-      <button type="button" class="socials" onclick="openLink('https://emtee-1023.github.io/reviews-page/')">Sample Testimonials Page</button>
-      <button type="button" class="socials" onclick="openLink('https://emtee-1023.github.io/stats-preview/')">Sample Statistics Page</button>
-      <button type="button" class="socials" onclick="openLink('https://emtee-1023.github.io/results-summary/')">Sample Results-summary page</button>
-      <button type="button" class="socials" onclick="openLink('https://emtee-1023.github.io/qr-code-container/')">Sample qrcode card</button>
-      <button type="button" class="socials" onclick="openLink('https://emtee-1023.github.io/order-summary-card/')">Sample order summary page</button>
-    </div>
-    
-  </main>
-  
-  <footer>
-    <div class="container">
-      <div class="title">
-        <h1>Disclaimer</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/jpg"
+      sizes="32x32"
+      href="./assets/images/DevSolutions Logo-01.jpg"
+    />
+    <title>The Talamsons Homelab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="pfp">
+        <img
+          src="assets/images/DevSolutions Logo-01.jpg"
+          alt="Logo"
+          class="pfp"
+        />
       </div>
-      <div class="description">
-        <p>All the above sample projects fully belong to DevSolutions and cannot be used for monetary gain without our permission</p>
-        <p>Links:</p>
+      <div class="name">
+        <h1>The Talamsons Homelab</h1>
       </div>
-      <div class="links">
-        <p>click <a href="mailto:devsolutions023@gmail.com" target="_blank">here</a> to send us an email</p>
-        <p>click <a href="https://calendly.com/devsolutions/30min" target="_blank">here</a> to book a call with us</p>
-        <p>click <a href="https://wa.me/254792314330" target="_blank">here</a> to chat on Whatsapp</p>
+      <div class="location">
+        <p>Self-hosted services</p>
       </div>
-    </div>
-  </footer>
-  <script src="script.js"></script>
-</body>
+      <div class="proffesion">
+        <p style="text-align: center">Welcome, Pick a resource to continue</p>
+      </div>
+      <div class="buttons">
+        <button
+          type="button"
+          class="socials homelab-btn"
+          onclick="openLink('http://server.home:3000')"
+        >
+          <span
+            class="icon"
+            aria-label="Docuseal"
+            title="Docuseal"
+            style="font-size: 1.5em"
+            >🗂️</span
+          >
+          <span class="btn-label">Docuseal (e-signatures)</span>
+        </button>
+        <button
+          type="button"
+          class="socials homelab-btn"
+          onclick="openLink('http://server.home:8096')"
+        >
+          <span
+            class="icon"
+            aria-label="Jellyfin"
+            title="Jellyfin"
+            style="font-size: 1.5em"
+            >🎬</span
+          >
+          <span class="btn-label">Jellyfin (media server)</span>
+        </button>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="title">
+          <h1>About This Homelab</h1>
+        </div>
+        <div class="description">
+          <p>
+            This is the landing page for our Home Network Services. More
+            resources coming soon!
+          </p>
+          <p>For access or support, contact:</p>
+        </div>
+        <div class="links">
+          <p>
+            Email:
+            <a href="mailto:thetalamsons@gmail.com" target="_blank"
+              >info@waystar.co.ke</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
